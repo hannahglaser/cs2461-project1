@@ -77,7 +77,7 @@ int ques1(int x) {
     return (z & 1);
 
 }
-/*q1 answer*/
+/*question 1 answer*/
 int answer1(int x){
   return (x == 0);
 }
@@ -90,7 +90,7 @@ int ques2(x) {
 
     return (y+z);
 }
-/* q2 answer*/
+/* question 2 answer*/
 int answer2(int x){
   return abs(x);
 }
@@ -103,6 +103,7 @@ int ques3(int x){
 
     return !z;
 }
+/* question 3 answer*/
 
 /* question 4 */
 /* Assume 0 <= n <= 32 */
@@ -114,7 +115,7 @@ int ques4(int n) {
 
     return x & y;
 }
-
+/* question 4 answer*/
 
 /* question 5 */
 
