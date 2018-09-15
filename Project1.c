@@ -5,7 +5,7 @@
 
 /*
 Group number:1
-Team members: 
+Team members:
 Hannah Glaser
 Melody Lee
 Tyller Zhou
@@ -83,10 +83,10 @@ int answer1(int x){
 }
 
 /* question 2 */
-int ques2(x) {
+int ques2(int x) {
     int mask = x>>31;
-    int y= (x ^ mask);
-    int z = (~mask + 1);
+    int y = (x ^ mask);
+    int z = (~mask + 1); //Taking 2s compliment
 
     return (y+z);
 }
