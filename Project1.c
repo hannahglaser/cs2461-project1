@@ -2,7 +2,10 @@
 
 /*
 Group number:1
-Team members:
+Team members: 
+Hannah Glaser
+Melody Lee
+Tyller Zhou
 */
 
 /* PROJECT 1 */
