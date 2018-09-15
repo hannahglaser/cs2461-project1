@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 
 /*
 Group number:1
@@ -74,7 +77,7 @@ int ques1(int x) {
     return (z & 1);
 
 }
-
+/*q1 answer*/
 int answer1(int x){
   return (x == 0);
 }
@@ -86,6 +89,10 @@ int ques2(x) {
     int z = (~mask + 1);
 
     return (y+z);
+}
+/* q2 answer*/
+int answer2(int x){
+  return abs(x);
 }
 
 /* question 3 */
