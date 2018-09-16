@@ -78,8 +78,8 @@ int ques1(int x) {
 
 }
 /* question 1 answer */
-int answer1(int x){
-  return (x == 0);
+int ans1(int x){
+    return (x == 0);
 }
 
 /* question 2 */
@@ -91,7 +91,7 @@ int ques2(int x) {
     return (y+z);
 }
 /* question 2 answer */
-int answer2(int x){
+int ans2(int x){
   return abs(x);
 }
 
@@ -120,6 +120,7 @@ int ques4(int n) {
 }
 /* question 4 answer */
 
+
 /* question 5 */
 int ques5(int x) {
     int result = (x<<31);
@@ -129,32 +130,27 @@ int ques5(int x) {
 
 }
 /* question 5 answer */
-int answer5(int x){
-	  int even = 0;
-    int odd = -1;
-    if (x&2 ==0){
-      printf(" %d\n", even);
-    }
-	  else{
-      printf(" %d\n", odd);
-    }
+int ans5(int x) {
+    // If x is odd, x & 1 results in 1 and method returns -1.
+    // If x is even, x & 1 results in 0 and method returns 0. 
+    return (x & 1) * -1
 }
-/* question 6 */
 
+/* question 6 */
 int ques6(void) {
     int byte = 0x55;
     int word = byte | byte<<8;
 
     return word | word<<16;
 }
-
+/* question 6 answer */
 
 /* question 7 */
-
 int ques7(int x) {
 
     return x & (~x+1);
 }
+/* question 7 answer */
 
 
 /* question 8 */
@@ -164,9 +160,8 @@ int ques8(int x) {
 
     return y | z;
 }
-
 /* question 8 answer */
-int answer8(int x) {
+int ans8(int x) {
     // x is positive
     if (x > 0) {
         return 1;
@@ -182,7 +177,6 @@ int answer8(int x) {
 }
 
 /* question 9 */
-
 int ques9(int x, int n, int c) {
     int n8 = n << 3;
     int mask = 0xff << n8;
@@ -191,26 +185,26 @@ int ques9(int x, int n, int c) {
 
     return (z  | cshift);
 }
+/* question 9 answer */
 
 
 /* question 10 */
-
 int ques10(int x) {
 	int y = !!x;
 	int z = (!(x+x));
 
     return y & z;
 }
-
+/* question 10 answer */
 
 /* question 11 */
-
 int ques11(int x, int y) {
 	int a = x >> 31;
 	int b = y >> 31;
 
     return !((!a & b) | (!(a ^ b) & (y+~x)>>31));
 }
+/* question 11 answer */
 
 
 /* question 12 */
@@ -222,9 +216,9 @@ int ques12(int x, int m, int n) {
 
     return !((a|b) >> 31);
 }
+/* question 12 answer */
 
 /* question 13 */
-
 int ques13(int x) {
 
     int mask1, mask2, mask4, mask8, mask16;
@@ -245,6 +239,7 @@ int ques13(int x) {
 
     return x;
 }
+/* question 13 answer */
 
 /* question 14 */
 int ques14(int x) {
@@ -256,9 +251,9 @@ int ques14(int x) {
 
     return result;
 }
+/* question 14 answer */
 
 /* question 15 */
-
 int ques15(int x, int n) {
     /* for ques15 only, assume n is not a negative number  */
 
@@ -267,12 +262,12 @@ int ques15(int x, int n) {
 
     return (z & x);
 }
-
+/* question 15 answer */
 
 
 
 int main(){
-    
+
     int a, b, c;
 
     int t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15;
@@ -293,6 +288,8 @@ int main(){
     // To test/run the functions, you will need to input numbers and then call each of the functions, and print the return value 
     t1 = ques1(a);
     printf("output of ques1 is t1 = %d \n", t1);
+    t1 = ans1(a);
+    printf("")
     
     t2 = ques2(a);
     printf("output of ques2 is t2 = %d \n", t2);
