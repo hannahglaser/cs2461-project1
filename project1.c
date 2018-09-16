@@ -77,7 +77,7 @@ int ques1(int x) {
     return (z & 1);
 
 }
-/*question 1 answer*/
+/* question 1 answer */
 int answer1(int x){
   return (x == 0);
 }
@@ -90,7 +90,7 @@ int ques2(int x) {
 
     return (y+z);
 }
-/* question 2 answer*/
+/* question 2 answer */
 int answer2(int x){
   return abs(x);
 }
@@ -103,7 +103,7 @@ int ques3(int x){
 
     return !z;
 }
-/* question 3 answer*/
+/* question 3 answer */
 int ans3(int x){
   return x > 0;
 }
@@ -118,7 +118,7 @@ int ques4(int n) {
 
     return x & y;
 }
-/* question 4 answer*/
+/* question 4 answer */
 
 /* question 5 */
 int ques5(int x) {
@@ -128,7 +128,7 @@ int ques5(int x) {
     return result;
 
 }
-/* question 5 answer*/
+/* question 5 answer */
 int answer5(int x){
 	  int even = 0;
     int odd = -1;
@@ -149,7 +149,7 @@ int ques6(void) {
 }
 
 
-    /* question 7 */
+/* question 7 */
 
 int ques7(int x) {
 
@@ -163,6 +163,22 @@ int ques8(int x) {
     int z = !!x;
 
     return y | z;
+}
+
+/* question 8 answer */
+int answer8(int x) {
+    // x is positive
+    if (x > 0) {
+        return 1;
+    }
+    // x is negative
+    else if (x < 0) {
+        return -1;
+    }
+    // x is zero
+    else {
+        return 0;
+    }
 }
 
 /* question 9 */
@@ -255,9 +271,9 @@ int ques15(int x, int n) {
 
 
 
-int
-main(){
-int a, b, c;
+int main(){
+    
+    int a, b, c;
 
     int t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15;
 
