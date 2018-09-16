@@ -245,25 +245,68 @@ int ques15(int x, int n) {
 
 int
 main(){
-    int a, b;
+int a, b, c;
 
-    int t1;
+    int t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15;
 
  	printf("Enter first number, an integer stored into variable A preferably between 1 and 20:");
  	scanf ("%d",&a);
 	printf("\n");
  	printf("Enter second number, an integer stored into variable B preferably between 1 and 20:");
  	scanf ("%d", &b);
+ 	printf("\n");
+ 	printf("Enter third number, an integer stored into variable C preferably between 1 and 20:");
+ 	scanf ("%d", &c);
 	printf("\n");
 
 
-	printf("you entered a= %d b= %d  \n", a,b);
+	printf("you entered a= %d b= %d c= %d  \n", a,b,c);
 
-
-	t1=ques0(a,b);
-	printf("output of ques0 is t1 = %d  \n", t1);
-    /* To test/run the functions, you will need to input numbers and then call each of the functions, and print the return value */
-
-
-	return 0;
+    // To test/run the functions, you will need to input numbers and then call each of the functions, and print the return value 
+    t1 = ques1(a);
+    printf("output of ques1 is t1 = %d \n", t1);
+    
+    t2 = ques2(a);
+    printf("output of ques2 is t2 = %d \n", t2);
+    
+    t3 = ques3(a);
+    printf("output of ques3 is t3 = %d \n", t3);
+    
+    t4 = ques4(a);
+    printf("output of ques4 is t4 = %d \n", t4);
+    
+    t5 = ques5(a);
+    printf("output of ques3 is t5 = %d \n", t5);
+    
+    t6 = ques6();
+    printf("output of ques6 is t6 = %d \n", t6);
+    
+    t7 = ques7(a);
+    printf("output of ques7 is t7 = %d \n", t7);
+    
+    t8 = ques8(a);
+    printf("output of ques8 is t8 = %d \n", t8);
+    
+    t9 = ques9(a,b,c);
+    printf("output of ques9 is t9 = %d \n", t9);
+    
+    t10 = ques10(a);
+    printf("output of ques10 is t10 = %d \n", t10);
+    
+    t11 = ques11(a,b);
+    printf("output of ques11 is t11 = %d \n", t11);
+    
+    t12 = ques12(a,b,c);
+    printf("output of ques12 is t12 = %d \n", t12);
+    
+    t13 = ques13(a);
+    printf("output of ques13 is t13 = %d \n", t13);
+    
+    t14 = ques14(a);
+    printf("output of ques14 is t14 = %d \n", t14);
+    
+    t15 = ques15(a,b);
+    printf("output of ques15 is t15 = %d \n", t15);
+    
+    return 0;
 }
