@@ -118,7 +118,6 @@ int ques4(int n) {
 /* question 4 answer*/
 
 /* question 5 */
-
 int ques5(int x) {
     int result = (x<<31);
     result = (result >> 31);
@@ -126,7 +125,17 @@ int ques5(int x) {
     return result;
 
 }
-
+/* question 5 answer*/
+int answer5(int x){
+	  int even = 0;
+    int odd = -1;
+    if (x&2 ==0){
+      printf(" %d\n", even);
+    }
+	  else{
+      printf(" %d\n", odd);
+    }
+}
 /* question 6 */
 
 int ques6(void) {
