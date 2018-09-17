@@ -124,7 +124,7 @@ int ans4(int n) {
         return 0;
     } 
     else if (n > 0 && n <= 32) {
-        return -(2^(32-n));
+        return -(pow(2,(32-n)));
     }
 }
 
@@ -310,7 +310,9 @@ int ques15(int x, int n) {
     return (z & x);
 }
 /* question 15 answer */
-
+int ques15(int x, int n) {
+    return (x % pow(2,n));
+}
 
 
 int main(){
