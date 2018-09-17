@@ -206,6 +206,9 @@ int ques10(int x) {
     return y & z;
 }
 /* question 10 answer */
+int ans10(int x) {
+    return 0;
+}
 
 /* question 11 */
 int ques11(int x, int y) {
