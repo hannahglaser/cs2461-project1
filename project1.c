@@ -151,6 +151,9 @@ int ques6(void) {
     return word | word<<16;
 }
 /* question 6 answer */
+int ans6(void) {
+    return 1431655765;
+}
 
 /* question 7 */
 int ques7(int x) {
