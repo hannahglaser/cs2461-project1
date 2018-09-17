@@ -227,7 +227,14 @@ int ques11(int x, int y) {
     return !((!a & b) | (!(a ^ b) & (y+~x)>>31));
 }
 /* question 11 answer */
-
+int ans11(int x, int y) {
+    if (x < 0 && y > 0) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
 
 /* question 12 */
 int ques12(int x, int m, int n) {
@@ -396,8 +403,8 @@ int main(){
     
     t11 = ques11(a,b);
     printf("ques11 output %d \n", t11);
-    //t11 = ans11(a,b);
-    //printf("ans11 output: %d \n", t11);
+    t11 = ans11(a,b);
+    printf("ans11 output: %d \n", t11);
     
     t12 = ques12(a,b,c);
     printf("ques12 output %d \n", t12);
