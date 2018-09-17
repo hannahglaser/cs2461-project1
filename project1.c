@@ -140,7 +140,7 @@ int ques5(int x) {
 int ans5(int x) {
     // If x is odd, x & 1 results in 1 and method returns -1.
     // If x is even, x & 1 results in 0 and method returns 0. 
-    return (x & 1) * -1
+    return (x & 1) * -1;
 }
 
 /* question 6 */
@@ -336,51 +336,80 @@ int main(){
 
     // To test/run the functions, you will need to input numbers and then call each of the functions, and print the return value 
     t1 = ques1(a);
-    printf("output of ques1 is t1 = %d \n", t1);
+    printf("ques1 output: %d \n", t1);
     t1 = ans1(a);
-    printf("")
+    printf("ans1 output: %d \n", t1);
     
     t2 = ques2(a);
-    printf("output of ques2 is t2 = %d \n", t2);
+    printf("ques2 output %d \n", t2);
+    t2 = ans2(a);
+    printf("ans2 output: %d \n", t2);
     
     t3 = ques3(a);
-    printf("output of ques3 is t3 = %d \n", t3);
+    printf("ques3 output %d \n", t3);
+    t3 = ans3(a);
+    printf("ans3 output: %d \n", t3);
     
     t4 = ques4(a);
-    printf("output of ques4 is t4 = %d \n", t4);
+    printf("ques4 output %d \n", t4);
+    t4 = ans4(a);
+    printf("ans4 output: %d \n", t4);
     
     t5 = ques5(a);
-    printf("output of ques3 is t5 = %d \n", t5);
+    printf("ques5 output %d \n", t5);
+    t5 = ans5(a);
+    printf("ans5 output: %d \n", t5);
     
     t6 = ques6();
-    printf("output of ques6 is t6 = %d \n", t6);
+    printf("ques6 output %d \n", t6);
+    t6 = ans6();
+    printf("ans6 output: %d \n", t6);
     
     t7 = ques7(a);
-    printf("output of ques7 is t7 = %d \n", t7);
+    printf("ques7 output %d \n", t7);
+    //t7 = ans7(a);
+    //printf("ans7 output: %d \n", t7);
     
     t8 = ques8(a);
-    printf("output of ques8 is t8 = %d \n", t8);
+    printf("ques8 output %d \n", t8);
+    t8 = ans8(a);
+    printf("ans8 output: %d \n", t8);
     
     t9 = ques9(a,b,c);
-    printf("output of ques9 is t9 = %d \n", t9);
+    printf("ques9 output %d \n", t9);
+    //t9 = ans9(a,b,c);
+    //printf("ans9 output: %d \n", t9);
     
     t10 = ques10(a);
-    printf("output of ques10 is t10 = %d \n", t10);
+    printf("ques10 output %d \n", t10);
+    t10 = ans10(a);
+    printf("ans10 output: %d \n", t10);
     
     t11 = ques11(a,b);
-    printf("output of ques11 is t11 = %d \n", t11);
+    printf("ques11 output %d \n", t11);
+    //t11 = ans11(a,b);
+    //printf("ans11 output: %d \n", t11);
     
     t12 = ques12(a,b,c);
-    printf("output of ques12 is t12 = %d \n", t12);
+    printf("ques12 output %d \n", t12);
+    t12 = ans12(a,b,c);
+    printf("ans12 output: %d \n", t12);
     
     t13 = ques13(a);
-    printf("output of ques13 is t13 = %d \n", t13);
+    printf("ques13 output %d \n", t13);
+    t13 = ans13(a);
+    printf("ans13 output: %d \n", t13);
     
     t14 = ques14(a);
-    printf("output of ques14 is t14 = %d \n", t14);
+    printf("ques14 output %d \n", t14);
+    t14 = ans14(a);
+    printf("ans14 output: %d \n", t14);
     
     t15 = ques15(a,b);
-    printf("output of ques15 is t15 = %d \n", t15);
+    printf("ques15 output %d \n", t15);
+    t15 = ans15(a,b);
+    printf("ans15 output: %d \n", t15);
     
     return 0;
+
 }
