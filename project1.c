@@ -258,6 +258,20 @@ int ques13(int x) {
     return x;
 }
 /* question 13 answer */
+int ans13(int x) {
+
+    int bit;
+    int count = 0;
+    for (int i = 0; i < 32; i++) {
+        // Shift bit by bit to the right
+        bit = x >> i;
+        // If the rightmost bit of the current shift is 1, increment count
+        if (bit & 1) {
+            count++;
+        }
+    }
+    return count;
+}
 
 /* question 14 */
 int ques14(int x) {
