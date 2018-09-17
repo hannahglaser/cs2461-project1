@@ -383,8 +383,8 @@ int main(){
     
     t7 = ques7(a);
     printf("ques7 output %d \n", t7);
-    //t7 = ans7(a);
-    //printf("ans7 output: %d \n", t7);
+    t7 = ans7(a);
+    printf("ans7 output: %d \n", t7);
     
     t8 = ques8(a);
     printf("ques8 output %d \n", t8);
