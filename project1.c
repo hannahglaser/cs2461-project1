@@ -230,6 +230,11 @@ int ques12(int x, int m, int n) {
     return !((a|b) >> 31);
 }
 /* question 12 answer */
+int ans12(int x, int m, int n) {
+    if (x <= n && x >=m) {
+        return 1;
+    }
+}
 
 /* question 13 */
 int ques13(int x) {
