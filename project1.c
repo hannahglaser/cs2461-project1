@@ -255,6 +255,9 @@ int ans12(int x, int m, int n) {
     if (x <= n && x >=m) {
         return 1;
     }
+    else {
+        return 0;
+    }
 }
 
 /* question 13 */
