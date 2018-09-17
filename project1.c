@@ -3,6 +3,8 @@
 #include <string.h>
 #include <math.h>
 
+//PLEASE COMPILE USING -lm "gcc -o project1 project1.c -lm"
+
 /*
 Group number:1
 Team members:
@@ -280,7 +282,8 @@ int ques13(int x) {
 int ans13(int x) {
     int bit;
     int count = 0;
-    for (int i = 0; i < 32; i++) {
+    int i;
+    for (i = 0; i < 32; i++) {
         // Shift bit by bit to the right
         bit = x >> i;
         // If the rightmost bit of the current shift is 1, increment count
@@ -305,7 +308,8 @@ int ques14(int x) {
 int ans14(int x) {
     int bit;
     int count = 0;
-    for (int i = 0; i < 32; i++) {
+    int i;
+    for (i = 0; i < 32; i++) {
         bit = x >> i;
         if (bit & 1) {
             count++;
@@ -330,7 +334,7 @@ int ques15(int x, int n) {
 }
 /* question 15 answer */
 int ans15(int x, int n) {
-    return (x % ((int) pow(2,n)));
+    return (x % ((int) (pow(2, n))));
 }
 
 
@@ -396,8 +400,8 @@ int main(){
     
     t9 = ques9(a,b,c);
     printf("ques9 output: %d \n", t9);
-    //t9 = ans9(a,b,c);
-    //printf("ans9 output: %d \n", t9);
+    t9 = ans9(a,b,c);
+    printf("ans9 output: %d \n", t9);
     
     t10 = ques10(a);
     printf("ques10 output: %d \n", t10);
