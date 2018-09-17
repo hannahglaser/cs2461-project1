@@ -205,7 +205,10 @@ int ques9(int x, int n, int c) {
     return (z  | cshift);
 }
 /* question 9 answer */
-
+int ans9(int x, int n, int c) {
+    int mask = 0xff << (n << 3);
+    return (~mask & x) | (c << (n << 3));
+}
 
 /* question 10 */
 int ques10(int x) {
