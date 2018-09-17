@@ -92,7 +92,7 @@ int ques2(int x) {
 }
 /* question 2 answer */
 int ans2(int x){
-  return abs(x);
+    return abs(x);
 }
 
 /* question 3 */
@@ -105,7 +105,7 @@ int ques3(int x){
 }
 /* question 3 answer */
 int ans3(int x){
-  return x > 0;
+    return (x > 0);
 }
 
 /* question 4 */
@@ -119,7 +119,14 @@ int ques4(int n) {
     return x & y;
 }
 /* question 4 answer */
-
+int ans4(int n) {
+    if (n == 0) {
+        return 0;
+    } 
+    else if (n > 0 && n <= 32) {
+        return -(2^(32-n));
+    }
+}
 
 /* question 5 */
 int ques5(int x) {
