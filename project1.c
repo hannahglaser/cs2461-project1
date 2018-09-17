@@ -161,7 +161,16 @@ int ques7(int x) {
     return x & (~x+1);
 }
 /* question 7 answer */
-
+int ans7(int x) {
+    // If x is odd
+    if (x & 1) {
+        return 1;
+    }
+    // If x is even
+    else {
+        return abs(x);
+    }
+}
 
 /* question 8 */
 int ques8(int x) {
