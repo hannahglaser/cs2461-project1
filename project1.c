@@ -259,7 +259,6 @@ int ques13(int x) {
 }
 /* question 13 answer */
 int ans13(int x) {
-
     int bit;
     int count = 0;
     for (int i = 0; i < 32; i++) {
@@ -284,6 +283,22 @@ int ques14(int x) {
     return result;
 }
 /* question 14 answer */
+int ans14(int x) {
+    int bit;
+    int count = 0;
+    for (int i = 0; i < 32; i++) {
+        bit = x >> i;
+        if (bit & 1) {
+            count++;
+        }
+    }
+    if (count & 1) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
 
 /* question 15 */
 int ques15(int x, int n) {
