@@ -3,8 +3,6 @@
 #include <string.h>
 #include <math.h>
 
-//PLEASE COMPILE USING -lm "gcc -o project1 project1.c -lm"
-
 /*
 Group number:1
 Team members:
@@ -233,7 +231,7 @@ int ques11(int x, int y) {
 }
 /* question 11 answer */
 int ans11(int x, int y) {
-    if (x < 0 && y > 0) {
+    if (abs(x) < y || (x < 0 && y > 0)) {
         return 1;
     }
     else {
